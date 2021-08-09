@@ -5,5 +5,16 @@ if(y+ySpeed >= maxY){
 	ySpeed = -yMaxSpeed;
 }
 
+if(x >= room_width){
+	x = room_width - (enemySize/2);
+	xSpeed = -3
+}
+
+if(x <= 0){
+	x = (enemySize/2);
+	xSpeed = 3;
+}
+
 y += ySpeed;
 x += xSpeed;
+

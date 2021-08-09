@@ -5,7 +5,7 @@ enemySize = 128;
 ySpeed = 0;
 yAcceleration = 0.1;
 yMaxSpeed = 9;
-maxY = 600-(enemySize/2);//768 batas bawah screen
+maxY = room_height-(enemySize/2);//768 batas bawah screen
 
 xSpeed = 3;
 
@@ -20,7 +20,7 @@ function SetStartingType(_enemyType){
 	enemySize = enemySize / (2 * _enemyType);
 	image_xscale = image_xscale/ (2 * _enemyType);
 	image_yscale = image_yscale/ (2 * _enemyType);
-	maxY = 600-(enemySize/2);
+	maxY = room_height-enemySize/2;
 }
 
 function SetChildAttribute(child){

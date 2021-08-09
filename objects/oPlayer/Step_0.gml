@@ -8,6 +8,14 @@ if(keyboard_check(ord("D"))){
 	x += xSpeed;
 }
 
+if(x <= playerWidth/2){
+	x = playerWidth/2;
+}
+
+if(x >= room_width - (playerWidth/2)){
+	x = room_width - (playerWidth/2);
+}
+
 
 //shooting
 
