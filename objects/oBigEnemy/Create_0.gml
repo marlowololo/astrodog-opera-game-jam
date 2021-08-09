@@ -12,6 +12,17 @@ xSpeed = 3;
 image_xscale = 1;
 image_yscale = 1;
 
+function SetStartingType(_enemyType){
+	if(_enemyType==0){
+		return;
+	}
+	enemyType = _enemyType;
+	enemySize = enemySize / (2 * _enemyType);
+	image_xscale = image_xscale/ (2 * _enemyType);
+	image_yscale = image_yscale/ (2 * _enemyType);
+	maxY = 600-(enemySize/2);
+}
+
 function SetChildAttribute(child){
 	child.ySpeed = ySpeed;
 	child.yMaxSpeed = yMaxSpeed * 0.75;
