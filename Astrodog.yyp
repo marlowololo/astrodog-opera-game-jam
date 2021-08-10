@@ -2,7 +2,7 @@
   "resources": [
     {"id":{"name":"oSpawnManager","path":"objects/oSpawnManager/oSpawnManager.yy",},"order":0,},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":1,},
-    {"id":{"name":"spritePlayer","path":"sprites/spritePlayer/spritePlayer.yy",},"order":1,},
+    {"id":{"name":"spriteAstrodogRunning","path":"sprites/spriteAstrodogRunning/spriteAstrodogRunning.yy",},"order":1,},
     {"id":{"name":"spriteTestButton","path":"sprites/spriteTestButton/spriteTestButton.yy",},"order":3,},
     {"id":{"name":"oBigEnemy","path":"objects/oBigEnemy/oBigEnemy.yy",},"order":1,},
     {"id":{"name":"spriteEnemy","path":"sprites/spriteEnemy/spriteEnemy.yy",},"order":0,},
