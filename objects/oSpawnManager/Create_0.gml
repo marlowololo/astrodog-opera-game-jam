@@ -21,7 +21,6 @@ spawnPosition = [];
 
 function StartSpawn(){
 	// Start Spawn
-	show_debug_message("HEYYOOOOOOOO" + string(global.Wave));
 	randomize();
 	for(var i = 0; i < array_length(spawnPosition); i++){
 		var enemy = instance_create_layer(spawnPosition[i].x, spawnPosition[i].y,layer,oBigEnemy);
@@ -44,6 +43,12 @@ function EnemyKilled(){
 	if(numOfEnemy <= 0){
 		global.Wave++;
 		SetSpawnPosition();
+		
+		//temp upgrade player firerate
+		with(oPlayer){
+			UpgradeFireRate();
+		}
+		
 		alarm_set(0,1 * room_speed);
 	}
 }

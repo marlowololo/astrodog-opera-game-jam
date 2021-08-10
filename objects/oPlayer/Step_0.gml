@@ -30,7 +30,6 @@ if(x >= room_width - (playerWidth/2)){
 
 
 //shooting
-
 if(keyboard_check(ord("W")) && currentShootTimer >= shootCooldown){
 	instance_create_layer(x,y-5,layer,oAmmo);
 	currentShootTimer = 0;
