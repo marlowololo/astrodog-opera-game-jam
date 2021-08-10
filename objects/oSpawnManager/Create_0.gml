@@ -10,6 +10,7 @@ waveSetting[6] = [0];
 waveSetting[7] = [0,0];
 waveSetting[8] = [0,0,0];
 
+#region function
 function SpawnPosition(_x, _y) constructor
 {
 	x = _x;
@@ -67,6 +68,7 @@ function SetSpawnPosition(){
 		break;
 	}
 }
+#endregion
 
 //initial create, when opening the room
 SetSpawnPosition();
