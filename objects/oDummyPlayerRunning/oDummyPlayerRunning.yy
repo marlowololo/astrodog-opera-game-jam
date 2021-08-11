@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spriteAstrodogRunning",
+    "path": "sprites/spriteAstrodogRunning/spriteAstrodogRunning.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -23,11 +26,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Manager",
-    "path": "folders/Objects/Instances/Manager.yy",
+    "name": "Tutorial",
+    "path": "folders/Objects/UI/Tutorial.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oGameInit",
+  "name": "oDummyPlayerRunning",
   "tags": [],
   "resourceType": "GMObject",
 }
