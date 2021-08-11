@@ -1,2 +1,2 @@
-image_speed = 1/3;
-alarm_set(0, 10);
+image_speed = 2*image_number/room_speed; // *2 karena di spritenya 30 fps
+alarm_set(0, room_speed);

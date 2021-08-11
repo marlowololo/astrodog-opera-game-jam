@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spriteAstrodogShootingUp","path":"sprites/spriteAstrodogShootingUp/spriteAstrodogShootingUp.yy",},"order":7,},
     {"id":{"name":"oSpawnManager","path":"objects/oSpawnManager/oSpawnManager.yy",},"order":0,},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":1,},
     {"id":{"name":"oHighScoreManager","path":"objects/oHighScoreManager/oHighScoreManager.yy",},"order":3,},
