@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spriteAstrodogRunning",
-    "path": "sprites/spriteAstrodogRunning/spriteAstrodogRunning.yy",
+    "name": "spriteAstrodogIdle",
+    "path": "sprites/spriteAstrodogIdle/spriteAstrodogIdle.yy",
   },
   "solid": false,
   "visible": true,

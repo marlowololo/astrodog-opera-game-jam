@@ -1,12 +1,18 @@
 //movement
 
 if(keyboard_check(ord("A"))){
+	if(!isShooting){
+		sprite_index = spriteAstrodogRunning;
+	}
 	x -= xSpeed;
 	image_xscale = -1;
 	image_speed = animationSpeed;
 }
 
 if(keyboard_check(ord("D"))){
+	if(!isShooting){
+		sprite_index = spriteAstrodogRunning;
+	}
 	x += xSpeed;
 	image_xscale = 1;
 	image_speed = animationSpeed;
@@ -16,6 +22,7 @@ if(
 	keyboard_check_released(ord("A"))
 	|| keyboard_check_released(ord("D"))
 ){
+	sprite_index = spriteAstrodogIdle;
 	image_speed = 0;
 	image_index = 0;
 }
@@ -45,7 +52,7 @@ if(isShooting){
 	
 	shootingAnimationCounter++;
 	if(shootingAnimationCounter>shootingAnimationLength){
-		sprite_index = spriteAstrodogRunning
+		sprite_index = spriteAstrodogIdle;
 		image_speed = 0;
 		isShooting = false;
 		shootingAnimationCounter = 0;
