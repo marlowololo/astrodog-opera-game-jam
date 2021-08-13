@@ -54,7 +54,7 @@ if(isShooting){
 	
 	shootingAnimationCounter++;
 	if(shootingAnimationCounter>shootingAnimationLength){
-		if(shootingAnimationLength>9){
+		if(shootingAnimationLength>=9){
 			sprite_index = spriteAstrodogIdle;
 			image_speed = 0;
 		}
