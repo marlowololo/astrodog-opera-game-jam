@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spriteTestButton",
-    "path": "sprites/spriteTestButton/spriteTestButton.yy",
+    "name": "spriteUpgradeDamage",
+    "path": "sprites/spriteUpgradeDamage/spriteUpgradeDamage.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,7 +21,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oAmmo","path":"objects/oAmmo/oAmmo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],

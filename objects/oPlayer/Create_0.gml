@@ -33,9 +33,11 @@ function UpgradeFireRate(){
 	if(fireRateLevel <= 2){
 		upgradeSpeed = 4;
 	} else if(fireRateLevel <= 4){
-		upgradeSpeed = 0.75;
+		upgradeSpeed = 1;
 	} else if(fireRateLevel <= 6){
 		upgradeSpeed = 0.5;
+	} else if(fireRateLevel <= 10) {
+		upgradeSpeed = 0.25;
 	} else {
 		upgradeSpeed = 0.125;
 	}

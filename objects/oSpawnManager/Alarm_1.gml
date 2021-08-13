@@ -1,1 +1,2 @@
+currentWave++;
 SpawnWave();

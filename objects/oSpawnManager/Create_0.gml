@@ -13,7 +13,7 @@ waveSetting[3] = [2];
 spawnSetting[4] = [3];
 spawnSetting[5] = [3,3];
 spawnSetting[6] = [1,1,3,3];
-spawnSetting[7] = [3,3,0,0];
+spawnSetting[7] = [3,3,1,1];
 waveSetting[4] = [1];
 waveSetting[5] = [2];
 waveSetting[6] = [2,2];
@@ -44,7 +44,7 @@ function StartSpawn(){
 function SpawnWave(){
 	randomise();
 	if(global.Level >= endOfCustomizedLevel){
-		var waveEnemyCount = 3 + floor( (global.Level - endOfCustomizedLevel) / 8 );
+		var waveEnemyCount = 2 + floor( (global.Level - endOfCustomizedLevel) / 8 );
 	} else {
 		var waveEnemyCount = waveSetting[global.Level][currentWave];
 	}
@@ -88,15 +88,13 @@ function SpawnWave(){
 
 	}
 	
-	currentWave++;
-	
 	if(global.Level >= endOfCustomizedLevel){
 		var waveCount = 2 + ceil(floor( (global.Level - endOfCustomizedLevel) / 4 ) / 2);
 	} else {
 		var waveCount = array_length(waveSetting[global.Level]);
 	}
 	
-	if (currentWave < waveCount) {
+	if (currentWave + 1 < waveCount) {
 		alarm_set(1, 5*room_speed);
 	}
 }
@@ -120,7 +118,7 @@ function EnemyKilled(){
 	if(enemyLeft <= 0){
 		global.Level++;
 		global.IsOnUpgradeDelay = true;
-		instance_create_layer(448,95, "Manager", oUpgradeManager);
+		instance_create_layer(448,145, "Manager", oUpgradeManager);
 	}
 }
 

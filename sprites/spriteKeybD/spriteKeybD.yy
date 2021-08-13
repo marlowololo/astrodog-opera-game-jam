@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "UI Instance",
+    "path": "folders/Sprites/UI Instance.yy",
   },
   "resourceVersion": "1.0",
   "name": "spriteKeybD",
