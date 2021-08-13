@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"oUpgrade_Damage","path":"objects/oUpgrade_Damage/oUpgrade_Damage.yy",},"order":2,},
     {"id":{"name":"spriteAstrodogShootingUp","path":"sprites/spriteAstrodogShootingUp/spriteAstrodogShootingUp.yy",},"order":7,},
     {"id":{"name":"oSpawnManager","path":"objects/oSpawnManager/oSpawnManager.yy",},"order":0,},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":1,},
@@ -11,6 +12,7 @@
     {"id":{"name":"spriteKeybD","path":"sprites/spriteKeybD/spriteKeybD.yy",},"order":5,},
     {"id":{"name":"spriteTestButton","path":"sprites/spriteTestButton/spriteTestButton.yy",},"order":3,},
     {"id":{"name":"oScoreManager","path":"objects/oScoreManager/oScoreManager.yy",},"order":2,},
+    {"id":{"name":"oUpgradeManager","path":"objects/oUpgradeManager/oUpgradeManager.yy",},"order":5,},
     {"id":{"name":"oBigEnemy","path":"objects/oBigEnemy/oBigEnemy.yy",},"order":0,},
     {"id":{"name":"oFlyingEnemyAmmo","path":"objects/oFlyingEnemyAmmo/oFlyingEnemyAmmo.yy",},"order":1,},
     {"id":{"name":"spriteAstrodogIdle","path":"sprites/spriteAstrodogIdle/spriteAstrodogIdle.yy",},"order":8,},
@@ -19,6 +21,7 @@
     {"id":{"name":"spriteKeybA","path":"sprites/spriteKeybA/spriteKeybA.yy",},"order":4,},
     {"id":{"name":"oDummyPlayerRunning","path":"objects/oDummyPlayerRunning/oDummyPlayerRunning.yy",},"order":3,},
     {"id":{"name":"oFlyingEnemy","path":"objects/oFlyingEnemy/oFlyingEnemy.yy",},"order":0,},
+    {"id":{"name":"oUpgrade_MoveSpeed","path":"objects/oUpgrade_MoveSpeed/oUpgrade_MoveSpeed.yy",},"order":3,},
     {"id":{"name":"oCameraShaker","path":"objects/oCameraShaker/oCameraShaker.yy",},"order":4,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"oDummyAmmo","path":"objects/oDummyAmmo/oDummyAmmo.yy",},"order":5,},
@@ -31,6 +34,7 @@
     {"id":{"name":"oAmmo","path":"objects/oAmmo/oAmmo.yy",},"order":1,},
     {"id":{"name":"oMainMenu_PlayButton","path":"objects/oMainMenu_PlayButton/oMainMenu_PlayButton.yy",},"order":0,},
     {"id":{"name":"oBackground","path":"objects/oBackground/oBackground.yy",},"order":0,},
+    {"id":{"name":"oUpgrade_FireRate","path":"objects/oUpgrade_FireRate/oUpgrade_FireRate.yy",},"order":1,},
     {"id":{"name":"Gameplay","path":"rooms/Gameplay/Gameplay.yy",},"order":0,},
   ],
   "Options": [

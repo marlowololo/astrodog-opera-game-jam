@@ -9,7 +9,8 @@ yAcceleration = 0.1;
 yMaxSpeed = 9;
 maxY = room_height-(enemySize/2);//768 batas bawah screen
 
-xSpeed = 3;
+xBaseSpeed = 3;
+xSpeed = xBaseSpeed;
 
 //scaling related
 image_xscale = 1;

@@ -25,8 +25,8 @@ if(enemyType < 2){
 	var enemy2 = instance_create_layer(x-(enemySize/2),y,layer,oBigEnemy);
 	SetChildAttribute(enemy1);
 	SetChildAttribute(enemy2);
-	enemy1.xSpeed = 3;
-	enemy2.xSpeed = -3;
+	enemy1.xSpeed = xBaseSpeed;
+	enemy2.xSpeed = -xBaseSpeed;
 } else {
 	with(oSpawnManager){
 		EnemyKilled();

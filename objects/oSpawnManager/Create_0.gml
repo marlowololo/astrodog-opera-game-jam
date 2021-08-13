@@ -71,9 +71,17 @@ function SpawnWave(){
 }
 
 function EnemyKilled(){
-	if (currentWave < array_length(waveSetting[global.Level])-1) {
-		return;
+	if(global.Level >= endOfCustomizedLevel){
+		if (currentWave < 3){ // diganti jadi berdasarkan berapa kali loop boss udah kelewat * some value
+			return;
+		}
+	} else {
+		if (currentWave < array_length(waveSetting[global.Level])-1) {
+			return;
+		}
 	}
+	
+	
 	var enemyLeft = instance_number(oBigEnemy);
 	
 	//all wave cleared

@@ -43,9 +43,18 @@ if(keyboard_check(ord("W")) && currentShootTimer >= shootCooldown){
 	//animation stuff
 	if(!isShooting){
 		sprite_index = spriteAstrodogShootingUp;
-		image_index = 0;
+		image_index = 1;
 	}
 	isShooting = true;
+}
+
+if(
+	fireRateLevel >= 4
+	&& keyboard_check_released(ord("W"))
+	&& isShooting
+){
+	sprite_index = spriteAstrodogIdle;
+	image_speed = 0;
 }
 
 if(isShooting){
@@ -54,7 +63,7 @@ if(isShooting){
 	
 	shootingAnimationCounter++;
 	if(shootingAnimationCounter>shootingAnimationLength){
-		if(shootingAnimationLength>=9){
+		if(fireRateLevel<4){
 			sprite_index = spriteAstrodogIdle;
 			image_speed = 0;
 		}
