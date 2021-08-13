@@ -1,26 +1,35 @@
 //hardcoded setting for onboarding
 spawnSetting = [];
+waveSetting = [];
 spawnSetting[0] = [1];
 spawnSetting[1] = [1,1];
 spawnSetting[2] = [0];
 spawnSetting[3] = [0,0];
-spawnSetting[4] = [3];
-spawnSetting[5] = [3,3];
-spawnSetting[6] = [3,1,1,3];
-spawnSetting[7] = [0,3,3,0];
-
-waveSetting = [];
 waveSetting[0] = [1];
 waveSetting[1] = [2];
 waveSetting[2] = [1];
 waveSetting[3] = [2];
+
+spawnSetting[4] = [3];
+spawnSetting[5] = [3,3];
+spawnSetting[6] = [1,1,3,3];
+spawnSetting[7] = [3,3,0,0];
 waveSetting[4] = [1];
 waveSetting[5] = [2];
 waveSetting[6] = [2,2];
 waveSetting[7] = [2,2];
 
+spawnSetting[8] = [3,3,3];
+spawnSetting[9] = [1,1,1];
+spawnSetting[10] = [3,0,0,3];
+spawnSetting[11] = [0,3,3,0];
+waveSetting[8] = [3];
+waveSetting[9] = [3];
+waveSetting[10] = [2,2];
+waveSetting[11] = [2,2];
+
 currentWave = 0;
-endOfCustomizedLevel = 8;
+endOfCustomizedLevel = 12;
 
 #region function
 
@@ -110,6 +119,7 @@ function EnemyKilled(){
 	//all wave cleared
 	if(enemyLeft <= 0){
 		global.Level++;
+		global.IsOnUpgradeDelay = true;
 		instance_create_layer(448,95, "Manager", oUpgradeManager);
 	}
 }

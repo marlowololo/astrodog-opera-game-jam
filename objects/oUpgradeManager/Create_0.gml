@@ -4,14 +4,6 @@ upgradeArr[1] = oUpgrade_FireRate;
 upgradeArr[2] = oUpgrade_MoveSpeed;
 
 function OpenUpgrade(){
-	with(oAmmo){
-		instance_destroy();
-	}
-	with(oFlyingEnemyAmmo){
-		instance_destroy();
-	}
-	global.IsOnUpgradeDelay = true;
-	
 	alarm_set(0, room_speed * 1.5);
 	
 	var updateTypeCount = array_length(upgradeArr);
@@ -19,6 +11,15 @@ function OpenUpgrade(){
 	var yOffset = 50;
 	for(var i = 0; i < updateTypeCount; i++){
 		instance_create_layer(xOffset * (i + 1), y + yOffset, layer, upgradeArr[i]);
+	}
+	
+	global.IsOnUpgradeDelay = true;
+	
+	with(oAmmo){
+		instance_destroy();
+	}
+	with(oFlyingEnemyAmmo){
+		instance_destroy();
 	}
 }
 
@@ -57,5 +58,13 @@ function AfterUpgrade(){
 	global.IsOnUpgradeDelay = false;
 }
 
-OpenUpgrade();
+global.IsOnUpgradeDelay = true;
+with(oAmmo){
+	instance_destroy();
+}
+with(oFlyingEnemyAmmo){
+	instance_destroy();
+}
+
+alarm_set(1, room_speed * 0.5);
 image_xscale = 8;
