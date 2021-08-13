@@ -23,11 +23,13 @@
     {"id":{"name":"oDummyAmmo","path":"objects/oDummyAmmo/oDummyAmmo.yy",},"order":5,},
     {"id":{"name":"oDummyShooting","path":"objects/oDummyShooting/oDummyShooting.yy",},"order":4,},
     {"id":{"name":"GameInit","path":"scripts/GameInit/GameInit.yy",},"order":0,},
+    {"id":{"name":"spriteBackground","path":"sprites/spriteBackground/spriteBackground.yy",},"order":11,},
     {"id":{"name":"oTutorialButtonD","path":"objects/oTutorialButtonD/oTutorialButtonD.yy",},"order":1,},
     {"id":{"name":"spriteAstrodogAmmo","path":"sprites/spriteAstrodogAmmo/spriteAstrodogAmmo.yy",},"order":2,},
     {"id":{"name":"spriteKeybW","path":"sprites/spriteKeybW/spriteKeybW.yy",},"order":6,},
     {"id":{"name":"oAmmo","path":"objects/oAmmo/oAmmo.yy",},"order":1,},
     {"id":{"name":"oMainMenu_PlayButton","path":"objects/oMainMenu_PlayButton/oMainMenu_PlayButton.yy",},"order":0,},
+    {"id":{"name":"oBackground","path":"objects/oBackground/oBackground.yy",},"order":0,},
     {"id":{"name":"Gameplay","path":"rooms/Gameplay/Gameplay.yy",},"order":0,},
   ],
   "Options": [
@@ -69,6 +71,7 @@
     {"folderPath":"folders/Objects/Instances/Player.yy","order":5,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Instances/BigEnemy.yy","order":6,"resourceVersion":"1.0","name":"BigEnemy","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Instances/FlyingEnemy.yy","order":7,"resourceVersion":"1.0","name":"FlyingEnemy","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Instances/Background.yy","order":8,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
