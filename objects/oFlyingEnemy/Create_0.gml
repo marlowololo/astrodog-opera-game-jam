@@ -5,7 +5,7 @@ baseYPos = y;
 xBaseSpeed = 2;
 xSpeed = xBaseSpeed;
 
-hp = 4;
+hp = 6;
 
 //attack
 attackCooldown = room_speed * 3;

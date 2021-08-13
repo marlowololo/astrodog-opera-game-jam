@@ -23,7 +23,6 @@ var imageIndexBasenOnY = floor(
 	(room_height - minYArr[childIndex] -5) * 3 // -5 diujung buat offset aja
 ); 
 if(imageIndexBasenOnY<0) imageIndexBasenOnY = 0;
-show_debug_message(string(y));
 image_index = imageIndexBasenOnY;
 
 if(x >= room_width){

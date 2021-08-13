@@ -33,6 +33,7 @@ function StartSpawn(){
 }
 
 function SpawnWave(){
+	randomise();
 	if(global.Level >= endOfCustomizedLevel){
 		var waveEnemyCount = 3;
 	} else {
@@ -71,6 +72,8 @@ function SpawnWave(){
 			} else {
 				enemy.xSpeed = randSpeed;
 			}
+			var randAttackCooldown = random_range(room_speed * 2, room_speed * 3);
+			enemy.attackCooldown = randAttackCooldown;
 		}
 		
 
