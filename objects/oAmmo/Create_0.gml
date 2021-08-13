@@ -1,3 +1,3 @@
 //attribute
-ySpeed = 10;
+ySpeed = 15;
 image_angle = random(259);

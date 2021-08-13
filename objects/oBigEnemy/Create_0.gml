@@ -1,6 +1,7 @@
 //enemy attribute
 enemyType = 0;
 enemySize = 128;
+hp = 3;
 
 //speed and dimention related
 ySpeed = 0;
@@ -24,6 +25,7 @@ function SetStartingType(_enemyType){
 	image_xscale = image_xscale/ (2 * _enemyType);
 	image_yscale = image_yscale/ (2 * _enemyType);
 	maxY = room_height-enemySize/2;
+	hp = 3 - enemyType;
 }
 
 function SetChildAttribute(child){
@@ -34,5 +36,6 @@ function SetChildAttribute(child){
 	child.enemySize = enemySize/2;
 	child.image_xscale = image_xscale/2;
 	child.image_yscale = image_yscale/2;
+	child.hp = 3 - child.enemyType;
 }
 #endregion

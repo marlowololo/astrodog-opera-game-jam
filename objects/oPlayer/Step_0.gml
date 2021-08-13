@@ -6,7 +6,7 @@ if(keyboard_check(ord("A"))){
 	}
 	x -= xSpeed;
 	image_xscale = -1;
-	image_speed = animationSpeed;
+	image_speed = runningAnimationSpeed;
 }
 
 if(keyboard_check(ord("D"))){
@@ -15,7 +15,7 @@ if(keyboard_check(ord("D"))){
 	}
 	x += xSpeed;
 	image_xscale = 1;
-	image_speed = animationSpeed;
+	image_speed = runningAnimationSpeed;
 }
 
 if(
@@ -50,12 +50,15 @@ if(keyboard_check(ord("W")) && currentShootTimer >= shootCooldown){
 
 if(isShooting){
 	//animation shooting image speed
-	image_speed = 0.66; //intinya biar bisa 9 frame
+	image_speed = shootingAnimationSpeed;
 	
 	shootingAnimationCounter++;
 	if(shootingAnimationCounter>shootingAnimationLength){
-		sprite_index = spriteAstrodogIdle;
-		image_speed = 0;
+		if(shootingAnimationLength>9){
+			sprite_index = spriteAstrodogIdle;
+			image_speed = 0;
+		}
+
 		isShooting = false;
 		shootingAnimationCounter = 0;
 		
