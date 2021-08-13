@@ -5,6 +5,7 @@
     {"id":{"name":"oSpawnManager","path":"objects/oSpawnManager/oSpawnManager.yy",},"order":0,},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":1,},
     {"id":{"name":"oHighScoreManager","path":"objects/oHighScoreManager/oHighScoreManager.yy",},"order":3,},
+    {"id":{"name":"spriteEnemyBounce","path":"sprites/spriteEnemyBounce/spriteEnemyBounce.yy",},"order":13,},
     {"id":{"name":"spriteTestShield","path":"sprites/spriteTestShield/spriteTestShield.yy",},"order":12,},
     {"id":{"name":"oTutorialButtonW","path":"objects/oTutorialButtonW/oTutorialButtonW.yy",},"order":2,},
     {"id":{"name":"oTutorialButtonA","path":"objects/oTutorialButtonA/oTutorialButtonA.yy",},"order":0,},

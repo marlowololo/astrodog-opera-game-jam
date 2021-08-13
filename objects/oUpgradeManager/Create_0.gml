@@ -51,6 +51,7 @@ function AfterUpgrade(){
 		alarm_set(0, room_speed);
 	}
 	instance_destroy();
+	global.IsOnUpgradeDelay = false;
 }
 
 OpenUpgrade();
