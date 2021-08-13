@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spriteAstrodogAmmo",
-    "path": "sprites/spriteAstrodogAmmo/spriteAstrodogAmmo.yy",
+    "name": "spriteEnemyFlying",
+    "path": "sprites/spriteEnemyFlying/spriteEnemyFlying.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,15 +23,17 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Tutorial",
-    "path": "folders/Objects/UI/Tutorial.yy",
+    "name": "FlyingEnemy",
+    "path": "folders/Objects/Instances/FlyingEnemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oDummyAmmo",
+  "name": "oFlyingEnemy",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Instances",
-    "path": "folders/Objects/Instances.yy",
+    "name": "BigEnemy",
+    "path": "folders/Objects/Instances/BigEnemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "oBigEnemy",

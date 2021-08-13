@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spriteAmmo",
-    "path": "sprites/spriteAmmo/spriteAmmo.yy",
+    "name": "spriteAstrodogAmmo",
+    "path": "sprites/spriteAstrodogAmmo/spriteAstrodogAmmo.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Instances",
-    "path": "folders/Objects/Instances.yy",
+    "name": "Player",
+    "path": "folders/Objects/Instances/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "oAmmo",

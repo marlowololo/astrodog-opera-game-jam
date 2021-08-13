@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"07c29ccc-2bac-4d01-b649-f25221ed2ffa","path":"sprites/spriteAmmo/spriteAmmo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"07c29ccc-2bac-4d01-b649-f25221ed2ffa","path":"sprites/spriteAmmo/spriteAmmo.yy",},"LayerId":{"name":"9aa6d07c-cc73-4e1d-970e-720c7916512e","path":"sprites/spriteAmmo/spriteAmmo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spriteAmmo","path":"sprites/spriteAmmo/spriteAmmo.yy",},"resourceVersion":"1.0","name":"07c29ccc-2bac-4d01-b649-f25221ed2ffa","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"07c29ccc-2bac-4d01-b649-f25221ed2ffa","path":"sprites/spriteAstrodogAmmo/spriteAstrodogAmmo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"07c29ccc-2bac-4d01-b649-f25221ed2ffa","path":"sprites/spriteAstrodogAmmo/spriteAstrodogAmmo.yy",},"LayerId":{"name":"9aa6d07c-cc73-4e1d-970e-720c7916512e","path":"sprites/spriteAstrodogAmmo/spriteAstrodogAmmo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spriteAstrodogAmmo","path":"sprites/spriteAstrodogAmmo/spriteAstrodogAmmo.yy",},"resourceVersion":"1.0","name":"07c29ccc-2bac-4d01-b649-f25221ed2ffa","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spriteAmmo","path":"sprites/spriteAmmo/spriteAmmo.yy",},
+    "spriteId": {"name":"spriteAstrodogAmmo","path":"sprites/spriteAstrodogAmmo/spriteAstrodogAmmo.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"176f619f-703d-4930-9e4a-f6d6276351d1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07c29ccc-2bac-4d01-b649-f25221ed2ffa","path":"sprites/spriteAmmo/spriteAmmo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"176f619f-703d-4930-9e4a-f6d6276351d1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07c29ccc-2bac-4d01-b649-f25221ed2ffa","path":"sprites/spriteAstrodogAmmo/spriteAstrodogAmmo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spriteAmmo","path":"sprites/spriteAmmo/spriteAmmo.yy",},
+    "parent": {"name":"spriteAstrodogAmmo","path":"sprites/spriteAstrodogAmmo/spriteAstrodogAmmo.yy",},
     "resourceVersion": "1.3",
-    "name": "spriteAmmo",
+    "name": "spriteAstrodogAmmo",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spriteAmmo",
+  "name": "spriteAstrodogAmmo",
   "tags": [],
   "resourceType": "GMSprite",
 }

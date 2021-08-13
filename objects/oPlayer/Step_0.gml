@@ -22,9 +22,11 @@ if(
 	keyboard_check_released(ord("A"))
 	|| keyboard_check_released(ord("D"))
 ){
-	sprite_index = spriteAstrodogIdle;
-	image_speed = 0;
-	image_index = 0;
+	if(!isShooting){
+		sprite_index = spriteAstrodogIdle;
+		image_speed = 0;
+		image_index = 0;
+	}
 }
 
 if(x <= playerWidth/2){
@@ -48,7 +50,7 @@ if(keyboard_check(ord("W")) && currentShootTimer >= shootCooldown){
 
 if(isShooting){
 	//animation shooting image speed
-	image_speed = 1;// 2 * image number, karena sprite 30 fps
+	image_speed = 0.66; //intinya biar bisa 9 frame
 	
 	shootingAnimationCounter++;
 	if(shootingAnimationCounter>shootingAnimationLength){
