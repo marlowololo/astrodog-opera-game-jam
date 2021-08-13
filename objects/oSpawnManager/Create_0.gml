@@ -44,7 +44,7 @@ function StartSpawn(){
 function SpawnWave(){
 	randomise();
 	if(global.Level >= endOfCustomizedLevel){
-		var waveEnemyCount = 3;
+		var waveEnemyCount = 3 + floor( (global.Level - endOfCustomizedLevel) / 8 );
 	} else {
 		var waveEnemyCount = waveSetting[global.Level][currentWave];
 	}
@@ -91,7 +91,7 @@ function SpawnWave(){
 	currentWave++;
 	
 	if(global.Level >= endOfCustomizedLevel){
-		var waveCount = 3; // diganti jadi berdasarkan berapa kali loop boss udah kelewat * some value
+		var waveCount = 2 + ceil(floor( (global.Level - endOfCustomizedLevel) / 4 ) / 2);
 	} else {
 		var waveCount = array_length(waveSetting[global.Level]);
 	}
