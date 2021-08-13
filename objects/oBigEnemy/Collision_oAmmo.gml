@@ -9,6 +9,13 @@ with(oScoreManager){
 }
 
 if(enemyType < 2){
+	with(oCameraShaker){
+		ShakeScreen(10, (2-other.enemyType) * 2);
+	}
+}
+
+
+if(enemyType < 2){
 	var enemy1 = instance_create_layer(x+(enemySize/2),y,layer,oBigEnemy);
 	var enemy2 = instance_create_layer(x-(enemySize/2),y,layer,oBigEnemy);
 	SetChildAttribute(enemy1);

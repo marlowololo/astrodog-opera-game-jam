@@ -1,6 +1,6 @@
 //hardcoded setting for onboarding
 waveSetting = [];
-waveSetting[0] = [1];
+waveSetting[0] = [0];
 waveSetting[1] = [1,1];
 waveSetting[2] = [1,1,1];
 waveSetting[3] = [0];
