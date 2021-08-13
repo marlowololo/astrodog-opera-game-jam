@@ -39,7 +39,11 @@ if(x >= room_width - (playerWidth/2)){
 
 
 //shooting
-if(keyboard_check(ord("W")) && currentShootTimer >= shootCooldown){
+if(
+	keyboard_check(ord("W")) 
+	&& currentShootTimer >= shootCooldown
+	&& !global.IsOnUpgradeDelay
+){
 	//animation stuff
 	if(!isShooting){
 		sprite_index = spriteAstrodogShootingUp;
@@ -72,7 +76,8 @@ if(isShooting){
 		shootingAnimationCounter = 0;
 		
 		//shooting logic
-		instance_create_layer(x,y-20,layer,oAmmo);
+		var ammo = instance_create_layer(x,y-20,layer,oAmmo);
+		ammo.damage = shootDamage;
 		currentShootTimer = 0;
 	}
 }

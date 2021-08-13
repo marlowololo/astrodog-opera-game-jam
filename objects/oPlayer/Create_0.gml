@@ -7,6 +7,9 @@ currentShootTimer = shootCooldown;
 
 //upgradeStuff
 fireRateLevel = 0;
+damageLevel = 0;
+
+shootDamage = 1;
 
 //animation stuff
 image_speed = 0;
@@ -40,12 +43,21 @@ function UpgradeFireRate(){
 		shootingAnimationLength = shootCooldown;
 		shootingAnimationSpeed = 2/3 * (shootingAnimationLength/9);
 	}
-	
-	show_debug_message("cooldown");
-	show_debug_message(string(shootCooldown));
-	show_debug_message(string(shootingAnimationLength));
-	show_debug_message(string(shootingAnimationSpeed));
-	
+}
+
+function UpgradeDamage(){
+	damageLevel++;
+	if(damageLevel <= 2){
+		shootDamage += 1.5;
+	} else if (damageLevel <= 4){
+		shootDamage += 1;
+	} else {
+		shootDamage += 0.5;
+	}
+}
+
+function UpgradeMoveSpeed(){
+	xSpeed++;
 }
 
 #endregion

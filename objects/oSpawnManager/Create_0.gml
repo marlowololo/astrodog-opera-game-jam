@@ -86,14 +86,15 @@ function EnemyKilled(){
 	
 	//all wave cleared
 	if(enemyLeft <= 0){
+		//nanti jangan langsung di tambah, cek dulu bossfight
 		global.Level++;
+		
 		//temp upgrade player firerate langsung
 		//harusnya munculin pilihan upgrade
-		with(oPlayer){
-			UpgradeFireRate();
-		}
-		
-		alarm_set(0,1 * room_speed);
+		//with(oPlayer){
+		//	UpgradeFireRate();
+		//}
+		instance_create_layer(448,95, "Manager", oUpgradeManager);
 	}
 }
 

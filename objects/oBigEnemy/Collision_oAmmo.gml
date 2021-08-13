@@ -1,8 +1,11 @@
+var damageTaken = 0;
+
 with(other){
+	damageTaken = damage;
 	instance_destroy();
 }
 
-hp--;
+hp -= damageTaken;
 if(hp>0){
 	return;
 }
@@ -18,7 +21,6 @@ if(enemyType < 2){
 		ShakeScreen(10, (2-other.enemyType) * 2);
 	}
 }
-
 
 if(enemyType < 2){
 	var enemy1 = instance_create_layer(x+(enemySize/2),y,layer,oBigEnemy);
