@@ -42,7 +42,7 @@ function SpawnWave(){
 	for(var i = 0;i<waveEnemyCount;i++){
 		
 		if(global.Level >= endOfCustomizedLevel){
-			var rand = irand(1);
+			var rand = irandom(1);
 			if(rand == 0){
 				var spawnEnemyType = 0;
 			} else {
@@ -56,16 +56,24 @@ function SpawnWave(){
 		if( spawnEnemyType <3 ){
 			enemy = instance_create_layer(xSpawnOffset * (i + 1), 160, layer, oBigEnemy);
 			enemy.SetStartingType(spawnEnemyType);
+			var rand = irandom(1);
+			if(rand == 1){
+				enemy.xSpeed = -3;
+			} else {
+				enemy.xSpeed = 3;
+			}
 		} else {
 			enemy = instance_create_layer(xSpawnOffset * (i + 1), 160, layer, oFlyingEnemy);
+			var rand = irandom(1);
+			var randSpeed = random_range(1.5,3)
+			if(rand == 1){
+				enemy.xSpeed = -randSpeed;
+			} else {
+				enemy.xSpeed = randSpeed;
+			}
 		}
 		
-		var rand = irandom(1);
-		if(rand == 1){
-			enemy.xSpeed = -3;
-		} else {
-			enemy.xSpeed = 3;
-		}
+
 	}
 	
 	currentWave++;
@@ -94,17 +102,11 @@ function EnemyKilled(){
 	
 	
 	var enemyLeft = instance_number(oBigEnemy);
+	enemyLeft += instance_number(oFlyingEnemy);
 	
 	//all wave cleared
 	if(enemyLeft <= 0){
-		//nanti jangan langsung di tambah, cek dulu bossfight
 		global.Level++;
-		
-		//temp upgrade player firerate langsung
-		//harusnya munculin pilihan upgrade
-		//with(oPlayer){
-		//	UpgradeFireRate();
-		//}
 		instance_create_layer(448,95, "Manager", oUpgradeManager);
 	}
 }

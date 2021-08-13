@@ -7,6 +7,9 @@ function OpenUpgrade(){
 	with(oAmmo){
 		instance_destroy();
 	}
+	with(oFlyingEnemyAmmo){
+		instance_destroy();
+	}
 	global.IsOnUpgradeDelay = true;
 	
 	alarm_set(0, room_speed * 1.5);
