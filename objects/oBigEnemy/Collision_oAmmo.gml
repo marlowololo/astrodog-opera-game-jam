@@ -32,6 +32,7 @@ if(enemyType < 2){
 	enemy1.xSpeed = xBaseSpeed;
 	enemy2.xSpeed = -xBaseSpeed;
 } else {
+	instance_create_layer(x,y,layer,oWifi);
 	with(oSpawnManager){
 		EnemyKilled();
 	}

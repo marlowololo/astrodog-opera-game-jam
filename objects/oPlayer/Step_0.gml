@@ -1,4 +1,8 @@
 //movement
+if(isDead){
+	image_angle++;
+	return;
+}
 
 if(keyboard_check(ord("A"))){
 	if(!isShooting){

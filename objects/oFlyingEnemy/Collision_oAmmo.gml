@@ -12,6 +12,7 @@ if(hp>0){
 }
 
 instance_destroy();
+instance_create_layer(x,y,layer,oWifi);
 audio_play_sound(FlyingDead, 1, false);
 
 with(oScoreManager){

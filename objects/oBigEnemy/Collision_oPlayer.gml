@@ -5,5 +5,3 @@ with(other){
 with(oScoreManager){
 	OnLose();
 }
-
-room_goto(MainMenu);
