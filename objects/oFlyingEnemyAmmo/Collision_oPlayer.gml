@@ -1,4 +1,3 @@
-with(oScoreManager){
-	OnLose();
+with(other){
+	Dead();	
 }
-room_goto(MainMenu);

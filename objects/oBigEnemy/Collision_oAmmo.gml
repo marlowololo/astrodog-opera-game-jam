@@ -11,6 +11,7 @@ if(hp>0){
 }
 
 instance_destroy();
+audio_play_sound(BouncyDead, 1, false);
 
 with(oScoreManager){
 	AddScore(3 - other.enemyType);

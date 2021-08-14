@@ -64,4 +64,16 @@ function UpgradeMoveSpeed(){
 	xSpeed++;
 }
 
+isDead = false;
+function Dead(){
+	if(isDead) return;
+	audio_play_sound(LoseGame, 1, false);
+	
+	with(oScoreManager){
+		OnLose();
+	}
+
+	room_goto(MainMenu);
+}
+
 #endregion

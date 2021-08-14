@@ -11,6 +11,7 @@ if(hp>0){
 }
 
 instance_destroy();
+audio_play_sound(FlyingDead, 1, false);
 
 with(oScoreManager){
 	AddScore(5);

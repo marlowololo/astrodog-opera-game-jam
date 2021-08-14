@@ -76,6 +76,7 @@ if(isShooting){
 		shootingAnimationCounter = 0;
 		
 		//shooting logic
+		audio_play_sound(PlayerShoot, 1, false);
 		var ammo = instance_create_layer(x,y-20,layer,oAmmo);
 		ammo.damage = shootDamage;
 		currentShootTimer = 0;

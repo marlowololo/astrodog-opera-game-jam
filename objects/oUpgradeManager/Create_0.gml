@@ -3,6 +3,8 @@ upgradeArr[0] = oUpgrade_Damage;
 upgradeArr[1] = oUpgrade_FireRate;
 upgradeArr[2] = oUpgrade_MoveSpeed;
 
+audio_play_sound(UpgradeOpen, 1, false);
+
 function OpenUpgrade(){
 	
 	//jaga2
@@ -48,6 +50,7 @@ function MoveSpeedUpgrade(){
 }
 
 function AfterUpgrade(){
+	audio_play_sound(Upgrade, 1, false);
 	for(var i = 0; i < array_length(upgradeArr);i++){
 		with(upgradeArr[i]){
 			instance_destroy();

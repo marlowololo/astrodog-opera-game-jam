@@ -1,5 +1,6 @@
 if(currentAttackTimer <= attackTime){
 	var ammo1 = instance_create_layer(x,y,layer,oFlyingEnemyAmmo);
+	audio_play_sound(FlyingAttack, 1, false);
 	//var ammo2 = instance_create_layer(x,y,layer,oFlyingEnemyAmmo);
 	var angle = 0;
 	with(oPlayer){
