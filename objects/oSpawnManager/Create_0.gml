@@ -29,7 +29,7 @@ waveSetting[10] = [2,2];
 waveSetting[11] = [2,2];
 
 currentWave = 0;
-endOfCustomizedLevel = 12;
+endOfCustomizedLevel = global.EndOfCustomizedLevel;
 
 #region function
 
