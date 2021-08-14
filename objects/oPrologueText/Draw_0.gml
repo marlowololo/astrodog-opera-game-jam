@@ -7,5 +7,5 @@ draw_text(middleScreen , 120 ,"NOOO! THE WIFI SIGNAL IS STOLEN BY ALIENS!");
 draw_text(middleScreen , 150 ,"LETS GET OUR WIFI SIGNAL BACK!");
 
 draw_set_font(Font_OCR_Big);
-draw_text(middleScreen , 350 ,"PRESS ANY KEY TO CONTINUE . . .");
+draw_text(middleScreen , 350 ,"CLICK HERE TO CONTINUE . . .");
 draw_set_font(Font_OCR);
