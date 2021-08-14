@@ -8,3 +8,5 @@ function ResetWaveSetting(){
 	global.PlayerXPos = 160;
 	global.IsOnUpgradeDelay = false;
 }
+
+draw_set_font(Font_OCR);

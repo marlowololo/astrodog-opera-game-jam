@@ -101,7 +101,7 @@ function SpawnWave(){
 
 function EnemyKilled(){
 	if(global.Level >= endOfCustomizedLevel){
-		if (currentWave < 3){ // diganti jadi berdasarkan berapa kali loop boss udah kelewat * some value
+		if (currentWave < 2 + ceil(floor( (global.Level - endOfCustomizedLevel) / 4 ) / 2)){ // diganti jadi berdasarkan berapa kali loop boss udah kelewat * some value
 			return;
 		}
 	} else {

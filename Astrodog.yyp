@@ -15,6 +15,7 @@
     {"id":{"name":"spriteKeybD","path":"sprites/spriteKeybD/spriteKeybD.yy",},"order":1,},
     {"id":{"name":"spriteTestButton","path":"sprites/spriteTestButton/spriteTestButton.yy",},"order":3,},
     {"id":{"name":"oScoreManager","path":"objects/oScoreManager/oScoreManager.yy",},"order":2,},
+    {"id":{"name":"Font_OCR","path":"fonts/Font_OCR/Font_OCR.yy",},"order":0,},
     {"id":{"name":"oUpgradeManager","path":"objects/oUpgradeManager/oUpgradeManager.yy",},"order":5,},
     {"id":{"name":"oBigEnemy","path":"objects/oBigEnemy/oBigEnemy.yy",},"order":0,},
     {"id":{"name":"oFlyingEnemyAmmo","path":"objects/oFlyingEnemyAmmo/oFlyingEnemyAmmo.yy",},"order":1,},
