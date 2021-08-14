@@ -1,6 +1,6 @@
 {
-  "compression": 0,
-  "volume": 0.4,
+  "compression": 1,
+  "volume": 0.45,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "BGM.mp3",
-  "duration": 16.056,
+  "duration": 134.856,
   "parent": {
     "name": "BGM",
     "path": "folders/Sounds/BGM.yy",

@@ -26,11 +26,6 @@ function OnLose(){
 	if(currentWifiCollected>0){
 		alarm_set(1, room_speed);
 	}
-	
-	with(oHighScoreManager){
-		CheckHighScore(other.currentTotalScore);
-	}
-	ResetWaveSetting();
 }
 
 #endregion

@@ -9,4 +9,4 @@ if(y >= room_height - 10){
 	return;
 }
 
-y += 3;
+y += 5;
