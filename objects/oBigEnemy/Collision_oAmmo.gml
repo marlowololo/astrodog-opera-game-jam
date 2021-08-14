@@ -6,6 +6,7 @@ with(other){
 }
 
 hp -= damageTaken;
+damagedFeedbackCounter = damagedFeedbackDuration;
 if(hp>0){
 	return;
 }

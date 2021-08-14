@@ -31,6 +31,7 @@
     {"id":{"name":"spriteKeybA","path":"sprites/spriteKeybA/spriteKeybA.yy",},"order":0,},
     {"id":{"name":"FlyingAttack","path":"sounds/FlyingAttack/FlyingAttack.yy",},"order":6,},
     {"id":{"name":"oShield","path":"objects/oShield/oShield.yy",},"order":2,},
+    {"id":{"name":"shaderFlash","path":"shaders/shaderFlash/shaderFlash.yy",},"order":0,},
     {"id":{"name":"oDummyPlayerRunning","path":"objects/oDummyPlayerRunning/oDummyPlayerRunning.yy",},"order":3,},
     {"id":{"name":"oFlyingEnemy","path":"objects/oFlyingEnemy/oFlyingEnemy.yy",},"order":0,},
     {"id":{"name":"oUpgrade_MoveSpeed","path":"objects/oUpgrade_MoveSpeed/oUpgrade_MoveSpeed.yy",},"order":3,},

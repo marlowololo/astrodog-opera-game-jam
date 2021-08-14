@@ -23,6 +23,11 @@ isJumping = false;
 jumpingDuration = 0.25 * room_speed;
 jumpingTimeCounter = 0;
 
+//damaged feedback
+damagedFeedbackCounter = 0;
+damagedFeedbackDuration = 5;
+damagedFeedbackColor = c_white;
+
 xBaseSpeed = 3;
 xSpeed = xBaseSpeed;
 

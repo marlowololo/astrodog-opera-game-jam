@@ -43,4 +43,8 @@ if(y >= maxY){
 	y = maxY;
 	isJumping = true;
 }
+
+if(damagedFeedbackCounter>0){
+	damagedFeedbackCounter--;
+}
 #endregion

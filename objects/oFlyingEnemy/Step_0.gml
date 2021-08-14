@@ -17,3 +17,7 @@ if(currentAttackCooldownTimer >= attackCooldown && !isAttacking){
 	image_blend = c_red;
 	alarm_set(0,1);
 }
+
+if(damagedFeedbackCounter > 0){
+	damagedFeedbackCounter--;
+}

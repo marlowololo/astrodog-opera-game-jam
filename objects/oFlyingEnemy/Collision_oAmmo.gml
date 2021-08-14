@@ -5,6 +5,7 @@ with(other){
 	instance_destroy();
 }
 
+damagedFeedbackCounter = damagedFeedbackDuration;
 hp -= damageTaken;
 if(hp>0){
 	return;

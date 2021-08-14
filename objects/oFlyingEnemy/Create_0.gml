@@ -15,3 +15,8 @@ isAttacking = false;
 attackTime = room_speed * 2;
 attackTimeSpace = attackTime / 2; // 3 times attack
 currentAttackTimer = 0;
+
+//damaged feedback
+damagedFeedbackCounter = 0;
+damagedFeedbackDuration = 5;
+damagedFeedbackColor = c_white;
